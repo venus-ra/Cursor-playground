@@ -1,0 +1,304 @@
+/* ============================================================================
+   BidBlocks Design System — Colours & Type
+   AutoGenAI · "New branding" token set
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap');
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/Inter-VariableFont_opsz_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/Inter-Italic-VariableFont_opsz_wght.ttf') format('truetype');
+}
+
+:root {
+  /* ───────────────────────── PRIMITIVES ─────────────────────────────────── */
+
+  --BUI05: #E8EDF4;
+  --BUI10: #D6E3F5;
+  --BUI20: #B7CDEB;
+  --BUI30: #8FB6EB;
+  --BUI40: #5693E9;
+  --BUI50: #206BD1;
+  --BUI60: #1B4D93;
+  --BUI70: #163053;
+  --BUI80: #112540;
+  --BUI90: #0C121A;
+  --BUI50-8:  #206BD114;
+  --BUI50-12: #206BD11F;
+  --BUI50-16: #206BD129;
+  --B500: #2B3C57;
+  --B300: #7A9ACC;
+  --B100: #C5D8EB;
+  --B000: #5693E9;
+
+  --White: #FFFFFF;
+  --U2:   #FAFAFA;
+  --U3:   #F1F1F1;
+  --U5:   #E3E3E3;
+  --U10:  #CACACA;
+  --U20:  #B1B1B1;
+  --U30:  #9A9A9A;
+  --U40:  #828282;
+  --U50:  #6C6C6C;
+  --U60:  #565656;
+  --U70:  #414141;
+  --U80:  #2E2E2E;
+  --U90:  #1B1B1B;
+  --U100: #120F0C;
+  --black-80: #2E2E2ECC;
+
+  --N02: #F7F4F2;
+  --N05: #EFE5E0;
+  --N10: #EDE0D5;
+  --N20: #DDCDBF;
+  --N30: #BFA794;
+  --N40: #9E8673;
+  --N50: #897361;
+  --N60: #6F5A4A;
+  --N70: #554334;
+  --N80: #3C2E21;
+  --N90: #241A11;
+  --N100:#120F0D;
+
+  --G000: #79E575; --G100: #BDE5B5; --G300: #6BB26B; --G500: #2F4F1F;
+  --O000: #F2903F; --O100: #F0CCAF; --O300: #E6AA76; --O500: #B86B39;
+  --P000: #6B49EC; --P100: #CDD0F7; --P300: #8E88B9; --P500: #534473;
+  --R000: #E34E3D; --R100: #F0AFAF; --R300: #E67676; --R500: #963335;
+  --TUI70:#21493F; --TUI50:#007068; --TUI40:#2DBCB8; --TUI30:#8CE3D0; --TUI10:#E6F5F4;
+  --T500: #21493F; --T300: #579687; --T100: #C1E5D8; --T000: #8CE3D0;
+  --Y000: #FFD147; --Y100: #F7EFA3; --Y300: #EDCF64; --Y500: #B28F36;
+
+  --red-700:    #B91C1C;  --red-500:    #DC2626;  --red-50:    #FFF6F6;
+  --green-700:  #15803D;  --green-500:  #16A34A;  --green-50:  #E8F6ED;
+  --yellow-700: #E9B104;  --yellow-500: #FFC700;  --yellow-50: #FFFDE7;
+
+  /* ───────────────────────── SEMANTIC TOKENS ────────────────────────────── */
+
+  --surface-inverse: var(--U90);
+  --surface-primary: var(--White);
+  --surface-secondary: var(--U2);
+  --surface-tertiary: var(--U3);
+  --surface-disabled: var(--U3);
+  --surface-progress: var(--U80);
+  --surface-accent: var(--BUI70);
+  --surface-accent-light: var(--BUI10);
+  --surface-backdrop: var(--black-80);
+  --surface-system-validation: var(--green-50);
+  --surface-system-danger: var(--red-50);
+  --surface-system-info: var(--yellow-50);
+  --surface-neutral-dark: var(--N10);
+  --surface-neutral: var(--N05);
+  --surface-neutral-light: var(--N02);
+
+  --surface-button-filled: var(--BUI60);
+  --surface-button-filled-hover: var(--BUI70);
+  --surface-button-filled-pressed: var(--BUI80);
+  --surface-button-tonal: var(--BUI05);
+  --surface-button-tonal-hover: var(--BUI10);
+  --surface-button-tonal-pressed: var(--BUI20);
+  --surface-button-system-danger: var(--red-500);
+  --surface-button-system-validation: var(--green-700);
+  --surface-button-system-danger-hover: var(--red-700);
+  --surface-button-system-danger-pressed: var(--red-500);
+  --surface-button-microinteraction: var(--BUI40);
+  --surface-tab-active: var(--N05);
+  --surface-tab-default: var(--White);
+  --surface-tab-hover: var(--N02);
+  --surface-tab-pressed: var(--N20);
+
+  --text-primary: var(--U90);
+  --text-secondary: var(--U60);
+  --text-disabled: var(--U30);
+  --text-inverse: var(--U2);
+  --text-accent: var(--BUI50);
+  --text-system-danger: var(--red-700);
+  --text-system-validation: var(--green-700);
+  --text-system-info: var(--yellow-700);
+  --text-microinteraction: var(--BUI40);
+  --text-neutral: var(--N40);
+  --text-navigation: var(--U80);
+
+  --border-primary: var(--U10);
+  --border-inactive: var(--U5);
+  --border-accent: var(--BUI60);
+  --border-progress: var(--U80);
+  --border-focus: var(--BUI50);
+  --border-microinteraction: var(--BUI40);
+  --border-system-danger: var(--red-500);
+  --border-system-validation: var(--green-500);
+  --border-info: var(--yellow-500);
+  --border-dark: var(--U90);
+
+  --alert-dark: var(--red-700);   --alert-mid: var(--red-500);    --alert-light: var(--red-50);
+  --success-dark: var(--green-700); --success-mid: var(--green-500); --success-light: var(--green-50);
+  --info-dark: var(--yellow-700); --info-mid: var(--yellow-500);  --info-light: var(--yellow-50);
+
+  /* ───────────────────────── RADIUS ─────────────────────────────────────── */
+  --radius-none: 0px;
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 9px;
+  --radius-xl: 11px;
+  --radius-2xl: 13px;
+  --radius-3xl: 17px;
+  --radius-4xl: 33px;
+  --radius-full: 360px;
+
+  /* ───────────────────────── SPACING ────────────────────────────────────── */
+  --spacing-none: 0px;
+  --spacing-4xs: 2px;
+  --spacing-3xs: 4px;
+  --spacing-2xs: 8px;
+  --spacing-xs: 12px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 112px;
+
+  /* ───────────────────────── BREAKPOINTS ────────────────────────────────── */
+  --device-w-2xsmall: 420px;  --device-w-xsmall: 640px;  --device-w-small: 768px;
+  --device-w-medium: 1024px;  --device-w-large: 1280px;  --device-w-xlarge: 1536px;
+  --device-w-2xlarge: 1920px;
+  --device-h-small: 680px; --device-h-medium: 720px; --device-h-large: 800px; --device-h-xlarge: 900px;
+
+  /* ───────────────────────── ELEVATION ──────────────────────────────────── */
+  --shadow-xs: 0 1px 2px rgba(18,18,18,0.06);
+  --shadow-sm: 0 1px 2px rgba(18,18,18,0.06), 0 1px 3px rgba(18,18,18,0.12);
+  --shadow-md: 0 2px 4px rgba(18,18,18,0.06), 0 4px 8px rgba(18,18,18,0.12);
+  --shadow-lg: 0 4px 8px rgba(18,18,18,0.06), 0 8px 24px rgba(18,18,18,0.12);
+  --shadow-xl: 0 8px 16px rgba(18,18,18,0.08), 0 16px 48px rgba(18,18,18,0.16);
+  --focus-ring: 0 0 0 2px var(--White), 0 0 0 4px var(--BUI50);
+
+  /* ───────────────────────── TYPOGRAPHY ─────────────────────────────────── */
+  --font-title-large: 'Newsreader', 'Canela', Georgia, serif;
+  --font-title-small: 'Inter', system-ui, sans-serif;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --fs-2xsmall: 11px;
+  --fs-xsmall: 11px;
+  --fs-small: 13px;
+  --fs-medium: 15px;
+  --fs-large: 20px;
+  --fs-xlarge: 24px;
+  --fs-2xlarge: 26px;
+  --fs-3xlarge: 32px;
+  --fs-4xlarge: 40px;
+  --fs-button-01: 13px;
+  --fs-button-02: 11px;
+
+  --lh-4xsmall: 12px; --lh-3xsmall: 14px; --lh-2xsmall: 16px; --lh-xsmall: 18px;
+  --lh-small: 20px;   --lh-medium: 20.7px; --lh-large: 22px;  --lh-xlarge: 24px;
+  --lh-2xlarge: 26px; --lh-3xlarge: 28px; --lh-4xlarge: 36px; --lh-5xlarge: 48px;
+  --lh-jumbo: 60px;
+
+  --ls-none: 0;
+  --ls-xsmall: 0.24px;
+  --ls-small: 0.28px;
+  --ls-medium: 0.42px;
+  --ls-large: 0.72px;
+  --ls-xlarge: 1.2px;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --para-none: 0px; --para-small: 8px; --para-medium: 16px; --para-large: 20px;
+}
+
+/* ============================================================================
+   SEMANTIC TYPE ROLES
+   ============================================================================ */
+
+.ds-display {
+  font-family: var(--font-title-large);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-4xlarge);
+  line-height: var(--lh-5xlarge);
+  letter-spacing: var(--ls-large);
+  color: var(--text-primary);
+}
+.ds-h1 {
+  font-family: var(--font-title-large);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-3xlarge);
+  line-height: var(--lh-4xlarge);
+  letter-spacing: var(--ls-medium);
+  color: var(--text-primary);
+}
+.ds-h2 {
+  font-family: var(--font-title-small);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xlarge);
+  line-height: var(--lh-3xlarge);
+  letter-spacing: var(--ls-xsmall);
+  color: var(--text-primary);
+}
+.ds-h3 {
+  font-family: var(--font-title-small);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-large);
+  line-height: var(--lh-large);
+  color: var(--text-primary);
+}
+.ds-h4 {
+  font-family: var(--font-ui);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-medium);
+  line-height: var(--lh-small);
+  color: var(--text-primary);
+}
+.ds-body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-medium);
+  line-height: var(--lh-large);
+  color: var(--text-primary);
+}
+.ds-body-sm {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
+  color: var(--text-secondary);
+}
+.ds-label {
+  font-family: var(--font-ui);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xsmall);
+  line-height: var(--lh-2xsmall);
+  letter-spacing: var(--ls-xsmall);
+  color: var(--text-secondary);
+}
+.ds-overline {
+  font-family: var(--font-ui);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-2xsmall);
+  line-height: var(--lh-3xsmall);
+  letter-spacing: var(--ls-xlarge);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.ds-caption {
+  font-family: var(--font-ui);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-2xsmall);
+  line-height: var(--lh-3xsmall);
+  color: var(--text-secondary);
+}
